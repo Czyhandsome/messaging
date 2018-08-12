@@ -29,7 +29,7 @@ public class ActivemqConfig {
                 new DefaultJmsListenerContainerFactory();
         factory.setConnectionFactory(connectionFactory());
         // 设置连接数
-        factory.setConcurrency("3-10");
+        factory.setConcurrency("1-10");
         // 重连间隔时间
         factory.setRecoveryInterval(1000L);
         // 允许发布-订阅模式
